@@ -1,5 +1,5 @@
 ---
-path: '/blogs/aop'
+path: '/blog/aop'
 title: Aspect-Oriented Programming
 date: 2020-04-29 18:39:00
 author: Ashish

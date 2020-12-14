@@ -5,35 +5,35 @@ const BlogLinks = [
     },
     {
         title: "Dependency Injection",
-        url: "/blogs/dependency-injection"
+        url: "/blog/dependency-injection"
     },
     {
         title: "Strategy Pattern",
-        url: "/blogs/strategy-pattern"
+        url: "/blog/strategy-pattern"
     },
     {
         title: "Spring Beans",
-        url: "/blogs/spring-beans"
+        url: "/blog/spring-beans"
     },
     {
         title: "Aspect-Oriented Programming",
-        url: "/blogs/aop"
+        url: "/blog/aop"
     },
     {
         title: "Spring Annotations",
-        url: "/blogs/spring-annotations"
+        url: "/blog/spring-annotations"
     },
     {
         title: "Program to Interfaces",
-        url: "/blogs/program-to-interfaces"
+        url: "/blog/program-to-interfaces"
     },
     {
         title: "@Component vs @Bean",
-        url: "/blogs/component-vs-bean"
+        url: "/blog/component-vs-bean"
     },
     {
         title: "Software Development Lifecycle",
-        url: "/blogs/sdlc"
+        url: "/blog/sdlc"
     },
 ];
 export default BlogLinks

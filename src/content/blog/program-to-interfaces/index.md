@@ -1,5 +1,5 @@
 ---
-path: '/blogs/program-to-interfaces/'
+path: '/blog/program-to-interfaces/'
 title: Program to Interfaces
 date: 2020-12-13 18:39:00
 author: Ashish

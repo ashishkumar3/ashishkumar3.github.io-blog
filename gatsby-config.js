@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/",
   siteMetadata: {
     title: `Ashish`,
     description: `Hi my name is ashish. I am a Software Engineer from India.`,
@@ -8,7 +9,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-page-progress",
       options: {
-        includePaths: ["/", { regex: "^/blogs" }],
+        includePaths: ["/", { regex: "^/blog" }],
         excludePaths: ["/blog/beep-beep-lettuce"],
         height: 3,
         prependToBody: false,

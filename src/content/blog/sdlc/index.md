@@ -1,5 +1,5 @@
 ---
-path: '/blogs/sdlc'
+path: '/blog/sdlc'
 title: Software Development Lifecycle
 date: 2020-04-29 18:39:00
 author: Ashish

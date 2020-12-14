@@ -1,5 +1,5 @@
 ---
-path: '/blogs/strategy-pattern'
+path: '/blog/strategy-pattern'
 date: '2020-11-14'
 title: 'Strategy Pattern'
 tags: ['gatsby', '2020']
