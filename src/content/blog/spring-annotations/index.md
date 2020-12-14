@@ -1,5 +1,5 @@
 ---
-path: '/blog/spring-annotations/'
+path: '/spring-annotations/'
 title: Spring Annotations
 date: 2020-12-13 18:39:00
 author: Ashish

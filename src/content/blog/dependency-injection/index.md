@@ -1,5 +1,5 @@
 ---
-path: '/blog/dependency-injection'
+path: '/dependency-injection'
 title: Dependency Injection
 date: 2020-04-29 18:39:00
 author: Ashish
