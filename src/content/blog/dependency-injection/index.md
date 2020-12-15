@@ -8,13 +8,13 @@ tags: ['Java', 'Dependency Injection', 'Spring']
 ***
 ## Introduction
 
-<mark>Dependency injection means to provide an object the instance variables that it is dependent on</mark>. That's it! Let's take a simple example.
+<mark>Dependency injection means to provide an object, the instance variables that it is dependent on</mark>. That's it! Let's take a simple example.
 
 ![Dependency Injection](https://ashishkumar39.github.io/blogs/dependency-injection.jpeg "Dependency Injdection diagram")
 
 ## Using a simple approach
 
-Let's say we want to make a drawing app. Using this we can draw triangles on the screen. Let's make the <mark>_Triangle_</mark> class for this. Here, we will have 3 instance variables(fields) as our points(coordinates). The constructor will set the values of the coordinates.
+Let's say we want to make a drawing app. Using this we can draw triangles on the screen. Let's make the <mark>_Triangle_</mark> class for this. Here, we will have 3 instance variables(fields) as our points(coordinates).
 
 ```java
 class Triangle {

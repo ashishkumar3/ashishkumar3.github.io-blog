@@ -6,6 +6,7 @@ module.exports = {
     author: `@ashish`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     {
       resolve: "gatsby-plugin-page-progress",
       options: {
@@ -20,6 +21,13 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
+          // CommonMark mode (default: true)
+        commonmark: true,
+        // Footnotes mode (default: true)
+        footnotes: true,
+        // Pedantic mode (default: true)
+        pedantic: true,
+        // GitHub Flavored Markdown mode (default: true)
         plugins: [
           `gatsby-remark-reading-time`,
           {

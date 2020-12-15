@@ -4,23 +4,15 @@ import React from "react"
 const Sidebar = ({ links }) => {
 
     const getLinks = () => {
-        return <div style={{display: "flex", flexDirection: "column"}}>{
+        return <>{
             links.map(link => {
-                return <Link to={link.url} className="sidebar-link" style={{color: "#26466f"}}>{link.title}</Link>
+                return <Link to={link.url} style={{fontSize: "18px"}}>{link.title}</Link>
             })
-        }</div>
+        }</>
     }
 
     return (
-        <div style={{
-            position: "fixed",
-            left: 0,
-            display: "flex",
-            flexDirection: "column",
-            width: "20%",
-            overflowX: "hidden",
-            // overflowY: "scroll"
-        }}>
+        <div style={{display: "flex", flexDirection: "column", padding: "45px"}}>
             {getLinks()}
         </div>
       )
