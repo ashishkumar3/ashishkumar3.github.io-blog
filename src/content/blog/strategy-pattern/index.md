@@ -2,7 +2,7 @@
 path: '/strategy-pattern'
 date: '2020-11-14'
 title: 'Strategy Pattern'
-tags: ['gatsby', '2020']
+tags: ['Strategy', 'Design Pattern', 'Java']
 excerpt: 'Strategy Pattern with Gatsby and React'
 ---
 
@@ -12,7 +12,7 @@ excerpt: 'Strategy Pattern with Gatsby and React'
 
 <mark>The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.</mark>
 
-Easy eh? I know, I know you did'nt get a single word. I mean who would understand anything about a design pattern from just a definition. So let's start with learning with examples.
+Easy eh? I know, I know you didn't get a single word. I mean who would understand anything about a design pattern from just a definition. So let's start with learning with examples.
 
 ## You just got a new project!
 
@@ -50,7 +50,7 @@ For now let's just stick to this only. The rest of the functionality can be take
 
 ```java
 public class Taxi implements Car {
-
+    
     @Override
     public void display() {
         System.out.println("Shiny yellow🚕");
@@ -66,7 +66,7 @@ In our example regular cars only come in black color. Everything else is good.
 
 ```java
 public class RegularCar implements Car {
-
+    
     @Override
     public void display() {
         System.out.println("Black regular car");
@@ -113,3 +113,5 @@ public class ToyCar implements Car {
 ```
 
 This actually works fine. The system have started to work back fine after the changes made. Well, you're not going to like this. But there is another issue here😭. We just got a call from the project managers and they want 3 more types of cars. Now, its your job to add those cars and with your current approach you will have to `override` the engine method in every class. 3 cars are still fine. Imagine you have 100 of cars. Out of these 
+
+***

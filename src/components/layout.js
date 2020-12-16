@@ -12,8 +12,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Sidebar from "./sidebar"
 
-import "./layout.css"
 import "../../node_modules/github-markdown-css/github-markdown.css"
+import "./layout.css"
+// import "./github-old.css"
 
 import BlogLinks from "../utils/bloglinks"
 
@@ -35,9 +36,7 @@ const Layout = ({ children }) => {
           <Sidebar links={BlogLinks}/>
           <div className="content">
             <main>{children}</main>
-            <footer>
-              Footer
-            </footer>
+            {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
           </div>
         </div>
       </div>

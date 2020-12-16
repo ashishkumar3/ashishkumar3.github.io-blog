@@ -8,17 +8,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
     {
-      resolve: "gatsby-plugin-page-progress",
-      options: {
-        includePaths: ["/", { regex: "^/blog" }],
-        excludePaths: ["/blog/beep-beep-lettuce"],
-        height: 3,
-        prependToBody: false,
-        color: `#98bae6`,
-        footerHeight: 500,
-      }
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
           // CommonMark mode (default: true)
@@ -33,17 +22,41 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: "language-",
+              classPrifix: "language-",
               inlineCodeMarker: null,
               aliases: {},
               showLineNumbers: true,
-              noInlineHighlight: false,
+              noInLineHeight: false,
+              languageExtensions: [
+                {
+                  language: "superscript",
+                  extend: "javascript",
+                  definition: {
+                    superscript_types: /(SuperType)/,
+                  },
+                  insertBefore: {
+                    function: {
+                      superscript_keywords: /(superif|superelse)/,
+                    },
+                  },
+                },
+              ],
+              // Customize the prompt used in shell output
+              // Values below are default
+              prompt: {
+                user: "root",
+                host: "localhost",
+                global: false,
+              },
+              // By default the HTML entities <>&'" are escaped.
+              // Add additional HTML escapes by providing a mapping
+              // of HTML entities and their escape value IE: { '}': '&#123;' }
               escapeEntities: {},
-          },
-        },
-      ],
+            }
+          }
+        ],
+      },
     },
-  },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

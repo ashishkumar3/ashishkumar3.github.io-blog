@@ -70,7 +70,7 @@ But wait? why should I care about that? It's works anyways right? Well yes, for 
 
 What about the other option we talked about earlier? Make another class and there initialize all the objects we need in the Triangle class. Now I no longer need the initializations in the class itself therefore I will need either a constructor to initialize the values for the Points or setter methods.
 
-```JAVA
+```java
 class Triangle {
     Point a;
     Point b;
@@ -93,7 +93,7 @@ class Triangle {
 
 The constructor here is used to inject the values to the Points. Now we will use this constructor(make an object) in our Main class and provide the required dependencies for the class Triangle.
 
-```java:title=Main.java
+```java
 class Main {
     Point a = new Point(1, 2);
     Point b = new Point(2, 2);
@@ -154,6 +154,6 @@ So here we injected the Points to the Triangle object and that's it! This is dep
 
 Checkout my Dependency Injection in Spring Framework article!
 
-Found a mistake? [edit](http://google.com) on github.
+Found a mistake? [edit](github.com/ashishkumar3/blog/blob/master/src/content/blog/dependency-injection/index.md) on github.
 ***
 
