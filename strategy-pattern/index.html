@@ -40,8 +40,8 @@ Every car is:</p>
 <span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <p>Since the drive functionality is same in both the <code class="language-text">Car</code> and the <code class="language-text">Taxi</code> we only have to override the display method of the <code class="language-text">Car</code> after <code class="language-text">inheriting</code> from the <code class="language-text">Car</code> class.</p>
 <p>Let's do the same for the <code class="language-text">Regular</code> car.</p>
-<p><strong><em>Regular Car</em></strong>
-In our example regular cars only come in black color. Everything else is good.</p>
+<p><strong><em>Regular Car</em></strong></p>
+<p>In our example regular cars only come in black color. Everything else is good.</p>
 <div class="gatsby-highlight" data-language="java"><pre style="counter-reset: linenumber NaN" class="language-java line-numbers"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">RegularCar</span> <span class="token keyword">extends</span> <span class="token class-name">Car</span> <span class="token punctuation">{</span>
     
     <span class="token annotation punctuation">@Override</span>
@@ -49,8 +49,8 @@ In our example regular cars only come in black color. Everything else is good.</
         <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Black color car"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
-<p><strong><em>Everything looks good, time for a break?</em></strong>
-Just as you thought you got a break after working your ass off on the taxis and regular cars, we got another feature to add. We now have to add engine in the car. Wait, that's it? Huh! that will take like 10 seconds. I just have to add engine in the car class.</p>
+<p><strong><em>Everything looks good, time for a break?</em></strong></p>
+<p>Just as you thought you got a break after working your ass off on the taxis and regular cars, we got another feature to add. We now have to add engine in the car. Wait, that's it? Huh! that will take like 10 seconds. I just have to add engine in the car class.</p>
 <div class="gatsby-highlight" data-language="java"><pre style="counter-reset: linenumber NaN" class="language-java line-numbers"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Car</span> <span class="token punctuation">{</span>
     <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">drive</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"vroom vroom"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -120,8 +120,8 @@ Just as you thought you got a break after working your ass off on the taxis and 
 <blockquote>
 <p>Interfaces follow a naming convention where their name end with -able. This means something which implements it, is <mark>able</mark> to do that.</p>
 </blockquote>
-<p><strong><em>Displayable and Enginable Interfaces</em></strong>
-As the name suggest something which is able to be displayed. The classes which will implement this, can then override the method.</p>
+<p><strong><em>Displayable and Enginable Interfaces</em></strong></p>
+<p>As the name suggest something which is able to be displayed. The classes which will implement this, can then override the method.</p>
 <div class="gatsby-highlight" data-language="java"><pre style="counter-reset: linenumber NaN" class="language-java line-numbers"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">Displayable</span> <span class="token punctuation">{</span>
     <span class="token keyword">void</span> <span class="token function">display</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
@@ -169,10 +169,10 @@ As the name suggest something which is able to be displayed. The classes which w
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <p>To use these implementations, think it this way. Every <code class="language-text">Taxi</code> <em>has a</em> <code class="language-text">Yellow</code> display and every <code class="language-text">Sports</code> car <em>has a</em> <code class="language-text">Sports engine</code> but every <code class="language-text">Taxi</code> and <code class="language-text">Sports</code> car <em>is a</em> car.</p>
-<p><strong><em>is a - relationship</em></strong>
-This is used in parent child relations. That is, one class extends the other.</p>
-<p><strong><em>has a - relationship</em></strong>
-This is used in composition. That means we have fields inside the class that it is dependent on. These fields are the implementations. This is generally better than inheritance.</p>
+<p><strong><em>is a - relationship</em></strong></p>
+<p>This is used in parent child relations. That is, one class extends the other.</p>
+<p><strong><em>has a - relationship</em></strong></p>
+<p>This is used in composition. That means we have fields inside the class that it is dependent on. These fields are the implementations. This is generally better than inheritance.</p>
 <p><strong><em>Car class updated</em></strong></p>
 <div class="gatsby-highlight" data-language="java"><pre style="counter-reset: linenumber NaN" class="language-java line-numbers"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Car</span> <span class="token punctuation">{</span>
 
