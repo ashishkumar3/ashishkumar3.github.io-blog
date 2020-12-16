@@ -45,7 +45,7 @@ class Point {
 }
 ```
 
-Now the question comes, where will we initialize the values for the co-ordinates of the traingle? Should I initialize the Points in the Triangle class itself or make another class(something like a main class?) and initialize the points there? Let's start with initializing the Points in the Triangle class first. This is how it will look.
+Now the question comes, where will we initialize the values for the `coordinates` of the traingle? Should I initialize the Points in the `Triangle` class itself or make another class(something like a main class?) and initialize the points there? Let's start with initializing the Points in the Triangle class first. This is how it will look.
 
 ```java
 class Triangle {
@@ -62,13 +62,13 @@ class Triangle {
 }
 ```
 
-Easy right? Now I can easily draw my triangles with this code :D But there is something really awful here :P The thing is there is something called Seperation of Concerns. It is a design principle which says that every section of your code should handle seperate concerns and if something is not it's job to handle then it should not care about that. In our example we are doing exactly the opposite. It is not the job of Triangle class to initialize the Point objects. It's only job is to take 3 Points and draw a Triangle.
+Easy right? Now I can easily draw triangles with this code 😄 But there is something really awful here :P The thing is there is something called <mark>Seperation of Concerns</mark>. It is a design principle which says that <mark>every section of your code should handle seperate concerns and if something is not it's job to handle then it should not care about that</mark>. In our example, we are doing exactly the opposite. It is not the job of Triangle class to initialize the Point objects. It's only job is to take 3 Points and draw a Triangle.
 
-But wait? why should I care about that? It's works anyways right? Well yes, for now. But as the application grows it becomes really difficult to manage such code. The practice we are following right now is called strong coupling. Which is consided a really bad practice. It means we are tying together our Triangle class with our Point class such that our Traingle class is responsible for creating the objects for the Point class. Which is not it's concern.
+But wait? why should I care about that? It's works anyways right? Well yes, for now. But as the application grows it becomes really difficult to manage such code. This is called `Strong coupling`. Which is consided a really bad practice. It means we are tying together our Triangle class with our Point class such that our `Traingle` class is responsible for creating the objects for the `Point` class. Which is not it's concern.
 
 ## What else can I do?
 
-What about the other option we talked about earlier? Make another class and there initialize all the objects we need in the Triangle class. Now I no longer need the initializations in the class itself therefore I will need either a constructor to initialize the values for the Points or setter methods.
+What about the other option we talked about earlier? Make another class and there initialize all the objects we need in the `Triangle` class. Now I no longer need the initializations in the class itself therefore I will need either a `constructor` or a `setter` to initialize the values for the `Points`.
 
 ```java
 class Triangle {
@@ -91,7 +91,7 @@ class Triangle {
 }
 ```
 
-The constructor here is used to inject the values to the Points. Now we will use this constructor(make an object) in our Main class and provide the required dependencies for the class Triangle.
+The constructor here is used to inject the values to the Points. Now we will use this constructor(make an object) in our Main class and provide the required `dependencies` for the class Triangle.
 
 ```java
 class Main {
@@ -108,7 +108,7 @@ class Main {
 
 ![Output](https://ashishkumar39.github.io/blogs/dependency-injection-output1.png)
 
-This is also called Constructor Injection since we are injecting the objects through the constructor. Similarly if we inject the objects using Setter Injection in which we use the setter methods to inject the dependencies. These are the 2 types of the Dependency Injection.
+This is also called <mark>Constructor Injection</mark> since we are <mark>injecting the objects through the constructor</mark>. Similarly if we inject the objects using <mark>Setter Injection</mark> in which we use the <mark>setter methods to inject the dependencies</mark>. These are the 2 types of the Dependency Injection.
 
 ```java
 class Triangle {
@@ -150,10 +150,10 @@ Using the setters to initialize the Points will also produce the exact same resu
 
 ## Conclusion
 
-So here we injected the Points to the Triangle object and that's it! This is dependency injection :D There are some frameworks which takes this to another level by automatically providing all the dependency on it's own. For example, Spring Framework uses Inversion of Control which handles the injection of the dependencies so that you only have to create any objects at all in your application!
+So here we injected the Points to the Triangle object and that's it! This is dependency injection :D There are some `frameworks` which takes this to another level by automatically providing all the dependency on it's own. For example, <mark>Spring Framework uses Inversion of Control which handles the injection of the dependencies</mark> so that you only have to create any objects at all in your application!
 
 Checkout my Dependency Injection in Spring Framework article!
 
-Found a mistake? [edit](github.com/ashishkumar3/blog/blob/master/src/content/blog/dependency-injection/index.md) on github.
+Found a mistake? [edit](https://github.com/ashishkumar3/blog/blob/master/src/content/blog/dependency-injection/index.md) on github.
 ***
 
