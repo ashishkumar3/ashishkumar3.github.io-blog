@@ -22,7 +22,7 @@ Every car can be:
 - a regular car
 - a taxi
 
-Keeping a minimal car functionality in mind we have:
+Keeping a minimal car functionality in mind, we have:
 
 ***The Car class***
 ```java
