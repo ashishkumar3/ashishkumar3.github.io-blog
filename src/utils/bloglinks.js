@@ -47,5 +47,9 @@ const BlogLinks = [
         title: "Software Development Lifecycle",
         url: "/sdlc"
     },
+    {
+        title: "Immutable Classes in Java",
+        url: "/immutable-class"
+    },
 ];
 export default BlogLinks
