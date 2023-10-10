@@ -154,4 +154,4 @@ This will autowire the minimal environment as it is annotated as primary. Simila
 
 <mark>@Qualifier</mark> annotation is also use to match the dependency just like <mark>@Primary</mark>, but in @Primary we can only work on dependencies of same type where as in @Qualifier we provide a value using which we can seperate the dependencies.
 
-`something`
+`spring` `annotations`
